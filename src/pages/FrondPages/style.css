@@ -1,0 +1,7 @@
+.text{
+  overflow-y: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+           line-clamp: 1; 
+   -webkit-box-orient: vertical;
+}

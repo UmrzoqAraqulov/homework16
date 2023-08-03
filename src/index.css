@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.containr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1500px) {
+  .containr {
+    width: 1400px;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box !important;
+}
+
+.slick-prev,
+.slick-next {
+  display: none;
+}
+.slick-next::before,
+.slick-prev::before {
+  display: none;
+}
+
+.slick-slider {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.ant-input {
+  width: 100% !important;
+}
+
+.active {
+  color: yellow;
+  border-bottom: 1.5px solid yellow;
+}
+
+.ant-btn {
+  background: rgb(0, 119, 255) !important;
+  color: white !important;
+}
+
+.ant-btn:hover {
+  background: rgb(0, 106, 255) !important;
+  color: white !important;
+  transform: scale(1.01);
+}
+
+nav {
+  z-index: 999 !important;
+}
+
+.text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.textPost {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+aside{
+  height: 100vh;
+}
+aside .ant-btn,aside .ant-btn:hover{
+  background: transparent !important;
+}
+
+@media (max-width:500px) {
+  .ant-layout-sider{
+    width: 70px !important;
+    max-width: 70px !important;
+    min-width: 70px !important;
+  }
+  .ant-layout-sider-children .ant-btn{
+    display: none;     
+  }
+}
+
+.ant-layout{
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
